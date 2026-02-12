@@ -8,7 +8,7 @@ export default function Layout({ children }) {
 
         <div className="relative flex flex-col min-h-screen">
           <Navbar />
-          <main className="flex-1 px-6 py-10 md:px-12 lg:px-16 overflow-y-auto">
+          <main className="flex-1 px-4 py-8 sm:px-6 md:px-10 lg:px-16 overflow-y-auto">
             <div className="max-w-6xl mx-auto w-full space-y-10">
               {children}
             </div>
