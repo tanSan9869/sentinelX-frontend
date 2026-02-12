@@ -13,7 +13,7 @@ export default function Logs() {
   useEffect(() => {
     const fetchLogs = async () => {
       try {
-        const res = await axios.get(`/api/dashboard/${projectId}/logs`);
+        const res = await axios.get(`/dashboard/${projectId}/logs`);
         setLogs(res.data);
       } catch (err) {
         setError("Unable to fetch logs right now.");

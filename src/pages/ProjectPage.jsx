@@ -12,7 +12,7 @@ export default function ProjectPage() {
 
   const fetchProjects = async () => {
     try {
-      const res = await axios.get("/api/projects");
+      const res = await axios.get("/projects");
       setProjects(res.data);
       setError("");
     } catch (err) {

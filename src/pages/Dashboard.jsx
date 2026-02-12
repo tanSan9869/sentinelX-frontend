@@ -8,7 +8,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const res = await axios.get("/api/projects");
+        const res = await axios.get("/projects");
         const projects = res.data;
 
         if (projects.length === 0) {

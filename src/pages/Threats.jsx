@@ -13,7 +13,7 @@ export default function Threats() {
   useEffect(() => {
     const fetchThreats = async () => {
       try {
-        const res = await axios.get(`/api/dashboard/${projectId}/threats`);
+        const res = await axios.get(`/dashboard/${projectId}/threats`);
         setData(res.data);
       } catch (err) {
         setError("Unable to retrieve threat intel right now.");
