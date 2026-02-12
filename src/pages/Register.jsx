@@ -16,7 +16,7 @@ export default function Register() {
 
     try {
       setLoading(true);
-      await axios.post("/auth/register", { email, password });
+      await axios.post("/api/auth/register", { email, password });
       navigate("/login");
     } catch (err) {
       setError("We couldn’t create your account. Try a different email.");
