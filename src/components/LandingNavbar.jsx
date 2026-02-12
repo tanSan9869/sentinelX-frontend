@@ -1,0 +1,20 @@
+import { Link } from "react-router-dom";
+
+export default function LandingNavbar() {
+  return (
+    <div className="flex justify-between items-center px-10 py-6 bg-slate-950 text-white">
+      <h1 className="text-2xl font-bold text-blue-500">SentinelX</h1>
+
+      <div className="space-x-6">
+        <Link to="/" className="hover:text-blue-400">Home</Link>
+        <Link to="/login" className="hover:text-blue-400">Login</Link>
+        <Link
+          to="/register"
+          className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded"
+        >
+          Get Started
+        </Link>
+      </div>
+    </div>
+  );
+}
